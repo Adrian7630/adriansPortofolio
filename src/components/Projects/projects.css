@@ -1,0 +1,299 @@
+.projectsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 20px 60px 20px 60px;
+}
+
+.projectsContainer h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 50px;
+}
+
+.projectsContent {
+  width: 100%;
+}
+
+.menuProjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 25px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gridContainer {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2D2D39;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 40px;
+  position: relative;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.btnProject {
+  width: 200px;
+  height: 60px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #20202A;
+  color: white;
+  cursor: pointer;
+  opacity: 80%;
+  margin-top: 25px;
+  margin-right: 25px;
+}
+
+.btnProject:hover {
+  opacity: 100%;
+}
+
+.btnProject:active {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.boxPortofolio {
+  height: 425px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.boxPortofolio .slideBox {
+  height: 0%;
+  width: 100%;
+  background-color: #22222E;
+  -webkit-transition-delay: 0.125s;
+          transition-delay: 0.125s;
+  -webkit-transition-duration: 625ms;
+          transition-duration: 625ms;
+  z-index: 2;
+  padding: 40px;
+  opacity: 0;
+  overflow-y: hidden;
+}
+
+.boxPortofolio .slideBox h3 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.boxPortofolio .slideBox p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.boxPortofolio .slideBox a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transition-delay: 0.125s;
+          transition-delay: 0.125s;
+  -webkit-transition-duration: 625ms;
+          transition-duration: 625ms;
+}
+
+.boxPortofolio .slideBox a span {
+  margin-left: 10px;
+  -webkit-transition-delay: 0.125s;
+          transition-delay: 0.125s;
+  -webkit-transition-duration: 625ms;
+          transition-duration: 625ms;
+}
+
+.boxPortofolio .slideBox a:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.boxPortofolio .slideBox a:hover span {
+  margin-left: 30px;
+  -webkit-transition-delay: 0.125s;
+          transition-delay: 0.125s;
+  -webkit-transition-duration: 625ms;
+          transition-duration: 625ms;
+}
+
+.boxPortofolio .testImg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.boxPortofolio:hover .testImg {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+.boxPortofolio:hover .slideBox {
+  opacity: 1;
+  height: 65%;
+}
+
+@media only screen and (max-width: 1600px) {
+  .gridContainer {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .gridContainer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .gridContainer {
+    row-gap: 30px;
+    padding: 20px;
+  }
+  .btnProject {
+    width: 160px;
+    height: 50px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #20202A;
+    color: white;
+    cursor: pointer;
+    opacity: 80%;
+    margin-top: 25px;
+  }
+  .btnProject:hover {
+    opacity: 100%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .gridContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  .boxPortofolio {
+    width: 100%;
+    height: 250px;
+  }
+  .boxPortofolio .slideBox {
+    padding: 15px;
+  }
+  .boxPortofolio .slideBox h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .boxPortofolio .slideBox p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .boxPortofolio .slideBox a {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .boxPortofolio:hover .slideBox {
+    height: 100%;
+  }
+  .projectsContainer {
+    padding: 20px 15px 20px 15px;
+  }
+  .projectsContainer h1 {
+    font-size: 35px;
+  }
+  .menuProjects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=projects.css.map */

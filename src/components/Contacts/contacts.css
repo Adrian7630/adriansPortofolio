@@ -1,0 +1,282 @@
+.contactsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 0px 60px 0px 60px;
+}
+
+.contactsContainer h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.errorBox {
+  color: red;
+  font-size: 20px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.infoBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.dataBox {
+  width: 500px;
+  background-color: #2A2A33;
+  padding: 15px 45px 25px 45px;
+  margin-bottom: 35px;
+  overflow-wrap: break-word;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.dataBox p {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  margin-top: 10px;
+  color: '#5E5E64';
+  overflow-wrap: break-word;
+}
+
+.dataBox span {
+  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+}
+
+.touchContent {
+  margin-bottom: 35px;
+}
+
+.mailBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 60px 60px 60px;
+  background-color: #2D2D39;
+  margin-bottom: 50px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.inputBox {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 35px;
+}
+
+.iconBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 25px;
+  width: 80px;
+  height: 100%;
+  background-color: #20202A;
+}
+
+.inputType {
+  width: 100%;
+  height: 100%;
+  background-color: #24242F;
+  color: white;
+  padding: 10px 10px 10px 40px;
+  font-size: 20px;
+  border: none;
+}
+
+.btnMessage {
+  font-size: 18px;
+  width: 220px;
+  padding: 25px;
+  border: 1px solid black;
+  margin-top: 70px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 10px;
+}
+
+.btnMessage:hover {
+  opacity: 80%;
+}
+
+.btnMessage:active {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+@media only screen and (max-width: 920px) {
+  .dataBox {
+    width: 500px;
+    background-color: #2A2A33;
+    padding: 5px 15px 15px 15px;
+    margin-bottom: 35px;
+  }
+  .dataBox p {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 18px;
+    margin-top: 10px;
+    color: '#5E5E64';
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contactsContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .dataBox {
+    width: 380px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .dataBox p {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .mailBox {
+    padding: 5px 20px 20px 20px;
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inputBox {
+    width: 100%;
+    height: 50px;
+    margin-top: 35px;
+  }
+  .iconBox {
+    font-size: 20px;
+    width: 50px;
+    height: 100%;
+    background-color: #20202A;
+  }
+  .inputType {
+    padding: 5px 5px 5px 25px;
+    font-size: 16px;
+  }
+  .btnMessage {
+    font-size: 14px;
+    width: 180px;
+    padding: 15px;
+    border: 1px solid black;
+    margin-top: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 10px;
+  }
+  .btnMessage:hover {
+    opacity: 80%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .btnMessage {
+    font-size: 13px;
+    width: 95px;
+    padding: 15px;
+    letter-spacing: 1px;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .contactsContainer h1 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  .dataBox {
+    width: 100%;
+  }
+  .dataBox p {
+    font-size: 15px;
+  }
+  .dataBox span {
+    width: 100px;
+    overflow-wrap: break-word;
+  }
+}
+/*# sourceMappingURL=contacts.css.map */

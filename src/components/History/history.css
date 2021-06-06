@@ -1,0 +1,249 @@
+.historyContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 40px 60px 40px 60px;
+}
+
+.columnBox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.columnBox h1 {
+  font-size: 45px;
+}
+
+.textBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.cardTextBox {
+  background-color: #2B2B36;
+  padding: 15px 35px 35px 35px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.circleAndTextBox {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.circleBar {
+  width: 105px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.barMagic {
+  width: 10px;
+  height: 100%;
+  background-color: #202020;
+  border-radius: 10px;
+}
+
+.bigTextBox {
+  width: 90%;
+  color: #878789;
+  font-size: 22px;
+}
+
+.rowTitleBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 5px;
+}
+
+.rowTitleBox h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.rowTitleBox p {
+  padding: 10px 20px 10px 20px;
+  background-color: #1E1E27;
+  color: #58585C;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.statusBox {
+  padding-bottom: 20px;
+  color: #58585C;
+  font-size: 20px;
+}
+
+.traingleBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #2B2B36;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 40%);
+          clip-path: polygon(0 0, 0% 100%, 100% 40%);
+  right: -25px;
+  top: 0px;
+}
+
+.circleHistoryContent {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: -66px;
+  top: 0;
+  border-radius: 100%;
+}
+
+.circleHistoryContent:hover {
+  -webkit-animation: pulseHistory 1s infinite;
+          animation: pulseHistory 1s infinite;
+}
+
+@-webkit-keyframes pulseHistory {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  70% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@keyframes pulseHistory {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  70% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .rowTitleBox p {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .historyContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .rowTitleBox p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .rowTitleBox p {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .columnBox h1 {
+    text-align: center;
+  }
+  .rowTitleBox p {
+    text-align: center;
+  }
+  .circleBar {
+    display: none;
+  }
+  .traingleBox {
+    display: none;
+  }
+  .circleHistoryContent {
+    display: none;
+  }
+  .circleAndTextBox {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .rowTitleBox p {
+    text-align: center;
+    padding-right: 40px;
+  }
+  .historyContainer {
+    padding: 30px 25px 30px 25px;
+  }
+  .circleAndTextBox {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=history.css.map */

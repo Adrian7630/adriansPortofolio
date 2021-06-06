@@ -1,0 +1,202 @@
+
+.mainBlock {
+    width: 100%;
+    height: 100%;
+    background-color: #1C1C26;
+    padding-left: 280px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: row;
+    z-index: -10;
+}
+
+.middleMenuOff {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 86%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.bigContent {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding-left: 280px;
+    padding-right: 80px;
+    padding-top: 70px;
+    width: 100%;
+    z-index: 10;
+    background-image: url("./images/BGG.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topMenuColor {
+    height: 70px;
+    background-color: #24242F;
+}
+
+.bottomMenu {
+    background-color: #24242F;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bottomMenuActive {
+    background-color: #24242F;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.middleMenuActive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 84%;
+    background-color: #20202A;
+    z-index: 100000000 !important;
+}
+
+.middleMenuContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40%;
+}
+
+.btnMenuContainerActive {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    background-color: #20202A;
+    top: 0;
+    right: 0;
+    z-index: 100000000 !important;
+    transition-duration: 1s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.btnMenuContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: 100%;
+    position: fixed;
+    background-color: #20202A;
+    top: 0;
+    right: 0;
+    z-index: 100000000 !important;
+    transition-duration: 1s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.btnMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 100000000 !important;
+}
+
+.btnMenuOn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 100000000 !important;
+}
+
+.homeContent {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 20vh;
+}
+
+.emptyContainerMenu {
+    display: none;
+    height: 70px;
+    width: 100%;
+    background-color: #20202A;
+}
+
+.btnModalClose{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    color: black;
+    top: 0;
+    right: 0;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 0 20px 0 20px;
+    cursor: pointer;
+    &:hover {
+        filter:brightness(120%);
+    }
+}
+
+.modalTextForm {
+    text-align: center;
+}
+
+@media only screen and (max-width: 920px)
+{
+    .middleMenuOff {
+        display: none;
+    }
+    .btnMenuContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        background-color: #20202A;
+        top: 0;
+        right: 0;
+        z-index: 100000000 !important;
+    }
+    .bigContent {
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .emptyContainerMenu {
+        display: block;
+    }
+    .bottomMenu { 
+        display: none;
+    }
+} 
