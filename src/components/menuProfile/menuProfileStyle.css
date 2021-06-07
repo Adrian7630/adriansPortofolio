@@ -191,7 +191,8 @@
 }
 
 .hoverImageContainer:hover .hoverImageBox:hover {
-  opacity: 70%;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 
 .cicle {
@@ -429,11 +430,17 @@
 }
 
 .modalMenuImage .iconHover {
-  opacity: 50%;
+  font-size: 40px;
+  margin-right: 25px;
+  cursor: pointer;
+  z-index: 10;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
 .modalMenuImage .iconHover:hover {
-  opacity: 100%;
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
 }
 
 .biggerImage {
@@ -484,7 +491,8 @@
 }
 
 .menuMobileDots:hover {
-  opacity: 50%;
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
   -webkit-animation: roll 1.5s infinite;
           animation: roll 1.5s infinite;
   -webkit-transform: rotate(180deg);

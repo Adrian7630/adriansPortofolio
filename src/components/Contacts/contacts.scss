@@ -103,7 +103,7 @@ input:focus{
     letter-spacing: 2px;
     border-radius: 10px;
     &:hover {
-        opacity: 80%;
+        filter:brightness(115%);
     }
     &:active {
         transform: translateY(4px);
@@ -193,7 +193,7 @@ input:focus{
     letter-spacing: 2px;
     border-radius: 10px;
     &:hover {
-        opacity: 80%;
+        filter:brightness(115%);
     }
 }
 }

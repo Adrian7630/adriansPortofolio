@@ -137,7 +137,8 @@ input:focus {
 }
 
 .btnMessage:hover {
-  opacity: 80%;
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
 }
 
 .btnMessage:active {
@@ -249,7 +250,8 @@ input:focus {
     border-radius: 10px;
   }
   .btnMessage:hover {
-    opacity: 80%;
+    -webkit-filter: brightness(115%);
+            filter: brightness(115%);
   }
 }
 
