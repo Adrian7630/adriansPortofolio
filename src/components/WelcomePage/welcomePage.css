@@ -205,7 +205,8 @@
 }
 
 .btnExplore:hover {
-  opacity: 90%;
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
 }
 
 .btnExplore:active {

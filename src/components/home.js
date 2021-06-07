@@ -92,13 +92,6 @@ const Home = () => {
     setName(lang === "EN" ? 'Home' : 'Acasă');
   }, [setName, portofolioColor, lang])
 
-  const iconImage = {
-    fontSize: '40px',
-    color: portofolioColor,
-    marginRight: '25px',
-    cursor: 'pointer',
-  }
-
   return (
     <Router>
     <div className="global">
@@ -107,7 +100,7 @@ const Home = () => {
       <div className = "modalImage">
         <div className = "modalMenuContent">
           <div className = "modalMenuImage">
-            <CancelIcon className = "iconHover" style = {iconImage} onClick={() => setModal(false)} /> 
+            <CancelIcon className = "iconHover" style = {{fontSize: '40px', color: portofolioColor}} onClick={() => setModal(false)} /> 
           </div>
           <div className = "biggerImage">
             <div className = "biggerImageContent" />

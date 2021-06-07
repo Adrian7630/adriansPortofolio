@@ -43,7 +43,6 @@ const useStyles = makeStyles({
     transition: 'transform .7s ease-in-out',
     marginRight: '10px',
     '&:hover': {
-      opacity: '85%',
       transform: 'rotate(360deg)',
     },
   },

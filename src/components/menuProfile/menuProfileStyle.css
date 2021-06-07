@@ -124,7 +124,8 @@
 }
 
 .settingsContainer:hover div:hover {
-  opacity: 90%;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 
 @-webkit-keyframes fadeinout {

@@ -82,7 +82,7 @@
             display: block;
             border-radius: 10px;
             &:hover {
-               opacity: 90%; 
+               filter:brightness(120%);
             }
             @keyframes fadeinout {
                 0% { opacity: 0; }

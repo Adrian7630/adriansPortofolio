@@ -19,6 +19,18 @@
   z-index: -10;
 }
 
+.iconHover {
+  font-size: 40px;
+  margin-right: 25px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.iconHover:hover {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
 .middleMenuOff {
   display: -webkit-box;
   display: -ms-flexbox;

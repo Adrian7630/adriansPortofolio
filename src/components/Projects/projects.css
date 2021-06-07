@@ -79,13 +79,13 @@
   background-color: #20202A;
   color: white;
   cursor: pointer;
-  opacity: 80%;
   margin-top: 25px;
   margin-right: 25px;
 }
 
 .btnProject:hover {
-  opacity: 100%;
+  -webkit-filter: brightness(140%);
+          filter: brightness(140%);
 }
 
 .btnProject:active {
@@ -224,11 +224,11 @@
     background-color: #20202A;
     color: white;
     cursor: pointer;
-    opacity: 80%;
     margin-top: 25px;
   }
   .btnProject:hover {
-    opacity: 100%;
+    -webkit-filter: brightness(120%);
+            filter: brightness(120%);
   }
 }
 

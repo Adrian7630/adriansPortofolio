@@ -50,11 +50,10 @@
     background-color: #20202A;
     color: white;
     cursor: pointer;
-    opacity: 80%;
     margin-top: 25px;
     margin-right: 25px;
     &:hover {
-        opacity: 100%;
+        filter:brightness(140%);
     }
     &:active {
         transform: translateY(4px);
@@ -165,10 +164,9 @@
         background-color: #20202A;
         color: white;
         cursor: pointer;
-        opacity: 80%;
         margin-top: 25px;
         &:hover {
-            opacity: 100%;
+            filter:brightness(120%);
         }
     }
 } 

@@ -117,7 +117,7 @@
     border: 1px solid black;
     font-size: 17px;
     &:hover {
-        opacity: 90%;
+        filter:brightness(115%);
     }
     &:active {
         transform: translateY(4px);
