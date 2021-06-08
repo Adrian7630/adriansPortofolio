@@ -80,11 +80,10 @@ const useStyles = makeStyles({
 })
 
 const Home = () => {
-  const {setModalMail, modalMail, name, setName, lang, portofolioColor, changeLang} = useContext(GeneralContext);
+  const {setBtnMenu, btnMenu, setTest, setModalMail, modalMail, name, setName, lang, portofolioColor, changeLang} = useContext(GeneralContext);
   const classes = useStyles();
 
   const [modal, setModal] = useState(false);
-  const [btnMenu, setBtnMenu] = useState(false);
 
   useEffect(() => {
     localStorage.setItem('portofolioColor', portofolioColor);
@@ -140,7 +139,7 @@ const Home = () => {
           <div className= { btnMenu ? "btnMenuContainerActive" : "btnMenuContainer"}>
             <div className="topMenuColor" />
             <div className= {btnMenu ? "btnMenuOn" : "btnMenu"}>
-              <Hamburger rounded  duration={0.8} size={40} color={portofolioColor}toggled={btnMenu} onToggle = {() => setBtnMenu(!btnMenu)} />
+              <Hamburger rounded  duration={0.8} size={40} color={portofolioColor}toggled={btnMenu} onToggle = {() => { setBtnMenu(!btnMenu); setTest(true)}} />
             </div>
             {btnMenu ?             
               <div className = "middleMenuActive" >

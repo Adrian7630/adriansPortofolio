@@ -73,14 +73,13 @@ const englishTitle = {
 
 const MenuProfile = (props) => {
   const { setModal } = props;
-  const { lang, portofolioColor, changeYellow, changeRed, changeBlue, changeGreen} = useContext(GeneralContext);
+  const {setBtnMenu, setTest, test, lang, portofolioColor, changeYellow, changeRed, changeBlue, changeGreen} = useContext(GeneralContext);
   const classes = useStyles();
-  const [test, setTest] = useState(!false);
 
   return (
     <div className= {test ? "menuOn" : "menuOff"}>
       <div className="dotAppear">
-        <MoreVertIcon className = "menuMobileDots" style={{fontSize: '50px', color: portofolioColor}} onClick={() => setTest(!test)} />
+        <MoreVertIcon className = "menuMobileDots" style={{fontSize: '50px', color: portofolioColor}} onClick={() => { setTest(!test); setBtnMenu(false)}} />
       </div>
       <div className= {test ? "menuProfileOn" : "menuProfileOff"}>
       <div className="avatarProfile">

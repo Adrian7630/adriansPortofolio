@@ -39,6 +39,8 @@ export const GeneralContextProvider = (props) => {
         })
     }
 
+    const [btnMenu, setBtnMenu] = useState(false);
+    const [test, setTest] = useState(true);
     const [modalMail, setModalMail] = useState(false);
     const [name, setName] = useState('');
     const [lang, setLang] = useState(localStorage.getItem('lang') ? localStorage.getItem('lang') : 'EN');
@@ -62,7 +64,7 @@ export const GeneralContextProvider = (props) => {
     }
 
     return (
-        <GeneralContext.Provider value={{ setModalMail, modalMail, setValues, validateData, errors, handleChange, values, setName, name, lang, changeLang, portofolioColor, changeYellow, changeRed, changeBlue, changeGreen}}>
+        <GeneralContext.Provider value={{setBtnMenu, btnMenu, setTest, test, setModalMail, modalMail, setValues, validateData, errors, handleChange, values, setName, name, lang, changeLang, portofolioColor, changeYellow, changeRed, changeBlue, changeGreen}}>
             {props.children}
         </GeneralContext.Provider>
     )
