@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react'; 
+import { useContext } from 'react'; 
 import { Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import MyCV from '../CV/CV_Adrian_Prisacaru.pdf';
