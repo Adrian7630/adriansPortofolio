@@ -207,6 +207,9 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .historyContainer {
+    text-align: center;
+  }
   .rowTitleBox p {
     margin-top: 15px;
     margin-bottom: 10px;

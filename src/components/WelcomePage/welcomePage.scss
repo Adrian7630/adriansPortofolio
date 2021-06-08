@@ -197,6 +197,10 @@
 } 
 @media only screen and (max-width: 658px)
 {
+    .mainContainerWelcome {
+        text-align: center;
+    }
+
     .footerWelcome {
         width: 100%;
         display: flex;

@@ -193,7 +193,7 @@
 
 .boxPortofolio:hover .slideBox {
   opacity: 1;
-  height: 65%;
+  height: 75%;
 }
 
 @media only screen and (max-width: 1600px) {
