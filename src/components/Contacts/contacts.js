@@ -15,13 +15,6 @@ const Contacts = () => {
         setName(lang === "EN" ? 'Contacts' : 'Contact');
       }, [setName, name, lang])
 
-      useEffect(() => {
-        if(values.userName !== "" && values.email !== "" && values.message !== "" && Object.keys(errors).length === 0 && test)
-        {
-            setModalMail(true);
-        }
-      }, [errors, values, setValues, test, setModalMail])
-
     const sentEmail = (event) => {
           event.preventDefault();
           if(values.userName !== "" && values.email !== "" && values.message !== "" && Object.keys(errors).length === 0 && test)
@@ -105,19 +98,19 @@ const Contacts = () => {
                         />
                     </div>
                     {errors.emailError && <p className="errorBox">{errors.emailError}</p>}
-                    <div className="inputBox">
+                    <div className="inputBoxMsg">
                         <div 
-                            className="iconBox" 
+                            className="iconBoxMsg" 
                             style={{backgroundColor: values.message !== '' ? portofolioColor : "#20202A"}}
                         >
                             <HiOutlineMail style={{color: values.message !== '' ? 'black' : "#8C8C8E"}} />
                         </div>
-                        <input 
+                        <textarea 
                             name="message" 
                             placeholder={lang === "EN" ? "Message ...": "Mesaj ..."} 
                             required 
-                            type="text"
-                            className="inputType" 
+                            type="textarea"
+                            className="inputTypeMsg" 
                             value={values.message}
                             onChange={handleChange}
                             style={errors.messageErrors && {border: '1px solid red'}}

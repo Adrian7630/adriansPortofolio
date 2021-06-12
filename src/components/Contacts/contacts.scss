@@ -71,7 +71,24 @@ input:focus{
     margin-top: 35px;
 }
 
+.inputBoxMsg {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    margin-top: 35px;
+}
+
 .iconBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    width: 80px;
+    height: 100%;
+    background-color: #20202A;
+}
+
+.iconBoxMsg {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,7 +106,18 @@ input:focus{
     padding: 10px 10px 10px 40px;
     font-size: 20px;
     border: none;
-    
+}
+
+.inputTypeMsg {
+    width: 100%;
+    height: 100%;
+    background-color: #24242F;
+    color: white;
+    padding: 30px 10px 10px 40px;
+    font-size: 20px;
+    border: none;
+    z-index: 5;
+    resize: none;
 }
 
 .btnMessage {
@@ -97,7 +125,7 @@ input:focus{
     width: 220px;
     padding: 25px;
     border: 1px solid black;
-    margin-top: 70px;
+    margin-top: 80px;
     cursor: pointer;
     font-weight: bold;
     letter-spacing: 2px;
@@ -112,6 +140,17 @@ input:focus{
 
 @media only screen and (max-width: 920px)
 {
+    .inputTypeMsg {
+        width: 100%;
+        height: 100%;
+        background-color: #24242F;
+        color: white;
+        padding: 30px 10px 10px 40px;
+        font-size: 20px;
+        border: none;
+        z-index: 5;
+    }
+
     .dataBox {
         width: 500px;
         background-color: #2A2A33;
@@ -170,15 +209,19 @@ input:focus{
     margin-top: 35px;
 }
 
-.iconBox {
-    font-size: 20px;
-    width: 50px;
-    height: 100%;
-    background-color: #20202A;
+.inputBoxMsg {
+    width: 100%;
+    height: 100px;
+    margin-top: 35px;
 }
 
 .inputType {
     padding: 5px 5px 5px 25px;
+    font-size: 16px;
+}
+
+.inputTypeMsg {
+    padding: 20px 5px 5px 25px;
     font-size: 16px;
 }
 
